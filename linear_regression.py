@@ -30,10 +30,8 @@ def linear_regression(x_vals, y_vals):
 
 
 
-#plots the data and the regeression line
+#plots the data and the regression line
 def plot_regression(x_vals, y_vals, slope, intercept):
-
-    
     line_y_vals = [intercept + slope * x for x in x_vals]
 
     plt.scatter(x_vals, y_vals, color='blue', label='Data Points')  #plots the data points
